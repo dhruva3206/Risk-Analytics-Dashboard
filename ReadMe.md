@@ -1,0 +1,54 @@
+# End-to-End Risk Analytics Pipeline 📊
+
+Hi there! Welcome to my portfolio project.
+
+I built this project because I wanted to bridge the gap between raw data and actionable actuarial insights. Instead of just running a model in a vacuum, I created a full pipeline: taking messy raw data, cleaning it with Python, running actuarial reserving models in R, and finally presenting the results in an interactive Excel dashboard.
+
+It simulates a real-world workflow where data engineering, statistical modeling, and business reporting all have to talk to each other.
+
+## 🚀 The Workflow
+
+Here is how the data flows through this project:
+
+1.  **Python (The Grunt Work):** I used Python to ingest the raw claims data. This stage handles the ETL (Extract, Transform, Load) process—cleaning up inconsistencies, formatting dates, and preparing the "triangles" required for actuarial analysis.
+2.  **R (The Brains):** Once the data was clean, I moved it to R. Here, I applied standard actuarial techniques (like Chain Ladder and Bornhuetter-Ferguson) to estimate IBNR (Incurred But Not Reported) reserves.
+3.  **Excel (The Face):** Finally, I exported the results to Excel to build a dynamic dashboard. This is what a stakeholder would actually see—allowing them to visualize loss ratios and reserve estimates at a glance.
+
+---
+
+## 📸 Dashboard Preview
+
+Here is a look at the final output. You can download the fully interactive Excel file below.
+
+![Dashboard Screenshot](3_Dashboard/dashboard_screenshot.png)
+*(Note: Please ensure you upload an image named `dashboard_screenshot.png` into the `3_Dashboard` folder for this image to appear!)*
+
+### 📥 [Download the Excel Dashboard](3_Dashboard/Risk_Analytics_Dashboard.xlsx)
+*(Click the link above to view the actual file located in the `3_Dashboard` folder)*
+
+---
+
+## 📂 Repository Structure
+
+Here is what you will find inside the folders:
+
+| Folder | Description |
+| :--- | :--- |
+| **`0_Data/`** | Contains the raw datasets used for the analysis and the processed CSVs generated after cleaning. |
+| **`1_Python_Scripts/`** | The Python notebooks/scripts used for ETL. This is where the raw data is transformed into development triangles. |
+| **`2_R_Modelling/`** | The R scripts containing the actuarial algorithms. This includes the Chain Ladder projections and reserve calculations. |
+| **`3_Dashboard/`** | The final destination. Contains the interactive Excel dashboard and screenshots of the analysis. |
+
+---
+
+## 🛠 Tools & Tech Stack
+
+*   **Python:** Pandas, NumPy (for data manipulation)
+*   **R:** ChainLadder package (for stochastic modeling)
+*   **Excel:** Advanced formulas, Pivot tables, and Slicers (for reporting)
+
+---
+
+## 📬 Contact
+
+If you have any questions about the methodology or just want to chat about risk analytics, feel free to reach out!
