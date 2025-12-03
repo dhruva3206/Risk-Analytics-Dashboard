@@ -10,9 +10,9 @@ It simulates a real-world workflow where data engineering, statistical modeling,
 
 Here is how the data flows through this project:
 
-1.  **Python (The Grunt Work):** I used Python to ingest the raw claims data. This stage handles the ETL (Extract, Transform, Load) process—cleaning up inconsistencies, formatting dates, and preparing the "triangles" required for actuarial analysis.
-2.  **R (The Brains):** Once the data was clean, I moved it to R. Here, I applied standard actuarial techniques (like Chain Ladder and Bornhuetter-Ferguson) to estimate IBNR (Incurred But Not Reported) reserves.
-3.  **Excel (The Face):** Finally, I exported the results to Excel to build a dynamic dashboard. This is what a stakeholder would actually see—allowing them to visualize loss ratios and reserve estimates at a glance.
+1.  **Python:** I used Python to ingest the raw claims data. This stage handles the ETL (Extract, Transform, Load) process
+2.  **R:** Once the data was clean, I moved it to R. Here, I applied linear regression to understand the correlation between the stock and The Market
+3.  **Excel (The Face):** Finally, I exported the results to Excel to build a dynamic dashboard. Reporting the Value at Risk (VarR), Beta and Alpha values
 
 ---
 
@@ -20,10 +20,9 @@ Here is how the data flows through this project:
 
 Here is a look at the final output. You can download the fully interactive Excel file below.
 
-![Dashboard Screenshot](3_Dashboard/dashboard_screenshot.png)
-*(Note: Please ensure you upload an image named `dashboard_screenshot.png` into the `3_Dashboard` folder for this image to appear!)*
+![Dashboard Screenshot](3_Excel_Output/Dashboard_Screenshot.png)
 
-### 📥 [Download the Excel Dashboard](3_Dashboard/Risk_Analytics_Dashboard.xlsx)
+### 📥 [Download the Excel Dashboard](3_Excel_Output/Risk_Dashboard.xlsx)
 *(Click the link above to view the actual file located in the `3_Dashboard` folder)*
 
 ---
@@ -50,5 +49,6 @@ Here is what you will find inside the folders:
 ---
 
 ## 📬 Contact
+
 
 If you have any questions about the methodology or just want to chat about risk analytics, feel free to reach out!
