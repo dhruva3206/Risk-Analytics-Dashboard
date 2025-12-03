@@ -10,7 +10,7 @@ It simulates a real-world workflow where data engineering, statistical modeling,
 
 Here is how the data flows through this project:
 
-1.  **Python:** I used Python to ingest the raw claims data. This stage handles the ETL (Extract, Transform, Load) process
+1.  **Python:** I used Python to pull data directly from 'Yahoo finance', clean and format dataset so as to use it for linear modeling
 2.  **R:** Once the data was clean, I moved it to R. Here, I applied linear regression to understand the correlation between the stock and The Market
 3.  **Excel (The Face):** Finally, I exported the results to Excel to build a dynamic dashboard. Reporting the Value at Risk (VarR), Beta and Alpha values
 
@@ -52,3 +52,4 @@ Here is what you will find inside the folders:
 
 
 If you have any questions about the methodology or just want to chat about risk analytics, feel free to reach out!
+
